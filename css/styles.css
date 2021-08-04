@@ -48,9 +48,11 @@ ul {
   margin: 0;
 }
 
-.img,
-.svg {
+img,
+svg {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -238,10 +240,14 @@ ul {
 
 .feature-list {
   display: flex;
+  margin: -15px;
 }
 
-.feature-list .item + .item {
+.feature-list .item {
   margin-left: 30px;
+  outline: 1px solid red;
+  flex-basis: calc(100% / 4 -30px);
+  margin: 15px;
 }
 
 .feature-list .title {
@@ -274,6 +280,9 @@ ul {
   margin-left: 30px;
 }
 
+.section-imege {
+  padding-bottom: 94px;
+}
 /* team */
 .team {
   display: flex;
@@ -341,10 +350,14 @@ ul {
 .card {
   display: flex;
   flex-wrap: wrap;
+  outline: 1px solid red;
+  margin: -15px;
 }
 
-.card .item + .item {
-  margin-left: 30px;
+.card .item {
+  outline: 1px solid red;
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
 }
 
 .foto .post {
