@@ -1,0 +1,366 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+/* белый #ffffff */
+/* акцент #2196F3 */
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона #2F303A */
+/* root - это кастомные свойства или css переменные
+которые позволяют менять вна странице цвета и так далее */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --primary-color: #2f303a;
+  --section-teame: #e5e5e5;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  /* margin: 0; */
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+.img,
+.svg {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section,
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-team {
+  background-color: var(--section-teame);
+}
+.section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo .header-accent {
+  color: var(--title-text-color);
+}
+
+.section-footer,
+.logo .footer-accent {
+  color: var(--background-color);
+}
+
+.button {
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.section-title,
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+/* header */
+
+/* NAVIGATION */
+.navigation,
+.contact .item {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
+
+.navigation .logo {
+  margin-right: 93px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.site-nav .item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.header .contact:hover,
+.header .contact:focus {
+  color: var(--accent-color);
+}
+
+.contact .item + .item {
+  margin-left: 50px;
+}
+/* если прописатьпросто list и вставлять его в те места где нужно убрать точки */
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.curren {
+  color: var(--accent-color);
+}
+
+/* adress footer vs header */
+
+.link {
+  color: var(--primary-text-color);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header .container {
+  display: flex;
+}
+.contact-header .item + .item {
+  margin-left: 50px;
+}
+
+/* секция hero */
+.hero {
+  background-color: var(--primary-color);
+  padding-bottom: 195px;
+  padding-top: 195px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  color: var(--background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.pramary {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+
+  padding: 10px 32px;
+  width: 200px;
+  border-radius: 4px;
+  margin-top: 38px;
+}
+
+/*feature*/
+
+.feature-list {
+  display: flex;
+}
+
+.feature-list .item + .item {
+  margin-left: 30px;
+}
+
+.feature-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 13px;
+  text-align: start;
+}
+
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+}
+/* section jobs */
+
+.section-image {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.jobs-image {
+  display: flex;
+}
+
+.jobs-image .item + .item {
+  margin-left: 30px;
+}
+
+/* team */
+.team {
+  display: flex;
+}
+
+.team .title + .title {
+  margin-left: 30px;
+}
+
+.com,
+.com-title {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.com {
+  color: var(--title-text-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.com-title {
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.contact-fut .link:hover,
+.contact-fut .link:focus {
+  color: var(--accent-color);
+}
+
+.city {
+  color: var(--background-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.link-footer {
+  color: var(--primary-text-color);
+}
+
+.contact-fut .link {
+  margin-bottom: 9px;
+}
+/*  ПОРТФОЛИО */
+.text {
+  color: var(--primary-text-color);
+}
+
+.content {
+  display: flex;
+}
+.content {
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+.content .item + .item {
+  margin-left: 8px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card .item + .item {
+  margin-left: 30px;
+}
+
+.foto .post {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.thumb {
+  padding: 20px 24px;
+}
+
+.post .text {
+  font-size: 16px;
+  line-height: 1.87;
+}
